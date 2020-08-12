@@ -1,0 +1,12 @@
+version: '2'
+services:
+  app:
+    build:
+      context: .
+      args:
+        - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+        - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+        - REGION=${REGION}
+    image: blog_infrastructure
+    volumes:
+      - ./src:/infra
