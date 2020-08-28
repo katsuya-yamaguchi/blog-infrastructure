@@ -39,7 +39,7 @@ provider "aws" {
 
   ######## この部分。#############
   # assume_role {
-  #   role_arn     = "arn:aws:iam::325951688903:role/SystemAdmin"
+  #   role_arn     = "arn:aws:iam::XXXXXXXXXX:role/SystemAdmin"
   # }
   ##############################
 }
@@ -53,7 +53,7 @@ terraform {
     encrypt  = true
 
     ######## この部分。#############
-    # role_arn = "arn:aws:iam::325951688903:role/SystemAdmin"
+    # role_arn = "arn:aws:iam::XXXXXXXXXX:role/SystemAdmin"
     ##############################
   }
 }
